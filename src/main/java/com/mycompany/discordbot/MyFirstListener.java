@@ -29,10 +29,5 @@ public class MyFirstListener extends ListenerAdapter {
             channel.sendMessage("Pong!").queue();
         }
 
-        if (content.equals("sexo")) {
-            MessageChannel channel = event.getChannel();
-            channel.sendMessage("Transa baixo nengue!").queue();
-        }
-
     }
 }
