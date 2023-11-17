@@ -11,7 +11,7 @@ public class start {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         JDA api = JDABuilder.createDefault(
-                "MTE3MTQ0NjA2MTExNDYwMTYxNQ.GPGFbB.whGudcYie-An2DYFT8Ml4qPDO3GvgWKnPnsPCw",
+                "",
                 GatewayIntent.GUILD_MESSAGES,
                 GatewayIntent.MESSAGE_CONTENT,
                 GatewayIntent.GUILD_MEMBERS).build();

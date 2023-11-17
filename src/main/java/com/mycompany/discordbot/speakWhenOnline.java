@@ -13,7 +13,7 @@ public class speakWhenOnline extends ListenerAdapter {
     public void onReady(ReadyEvent event) {
         if (event.getState().toString().equals("READY")) {
             // channel id = 1171447323063226442
-            String channelID = "1171447323063226442";
+            String channelID = "";
             TextChannel textChannel = event.getJDA().getTextChannelById(channelID);
 
             if (textChannel != null) {
