@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.discordbot;
 
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
@@ -9,11 +5,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 
-/**
- *
- * @author Gabri
- */
-public class MyFirstListener extends ListenerAdapter {
+public class myFirstListener extends ListenerAdapter {
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
@@ -24,10 +16,11 @@ public class MyFirstListener extends ListenerAdapter {
         Message message = event.getMessage();
         String content = message.getContentRaw();
 
+//        System.out.println(content);
         if (content.equals("!ping")) {
             MessageChannel channel = event.getChannel();
             channel.sendMessage("Pong!").queue();
+//            integrar aqui o ChatGPT
         }
-
     }
 }
